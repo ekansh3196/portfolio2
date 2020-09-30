@@ -9,8 +9,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link href="/path/to/venobox/venobox.css" rel="stylesheet" />
-  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/series-label.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="https://code.highcharts.com/module/data.js"></script>
 
 
   <title>MyResume</title>
@@ -25,6 +31,7 @@
 
   <!-- Template Main CSS File -->
   <link href="style.css" rel="stylesheet">
+  <!--link href="style2.css" rel="stylesheet"-->
 
 </head>
 
@@ -42,6 +49,7 @@
         <li><a href="#about"><i class="material-icons">person</i><span>About</span></a></li>
         <li><a href="#resume"><i class="material-icons">folder</i><span>Resume</span></a></li>
         <li><a href="#contact"><i class="material-icons">mail</i><span>Contact</span></a></li>
+        <li><a href="#highcharts"><i class="material-icons">pie_chart</i><span>dashboard</span></a></li>
       </ul>
     </nav><!-- .nav-menu -->
 
@@ -71,7 +79,7 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos="fade-right">
             <img src="ekansh.jpg" class="img-fluid" alt="Responsive image"style height="400px" width="380px">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
@@ -256,6 +264,32 @@
 
     </div>
   </section><!-- End Contact Section -->
+  <!--Highchart section-->
+  <section id="highcharts" class="highcharts">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>dashboard</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <figure class="highcharts-figure">
+            <div id="container1"></div>
+          </figure>
+        </div>
+        <div class="col-lg-6">
+          <figure class="highcharts-figure">
+            <div id="container3"></div>
+          </figure>
+        </div>
+      </div>
+      <div class="row">
+        <figure class="highcharts-figure">
+          <div id="container2"></div>
+          <p class="highcharts-description">
+        </figure>
+      </div>
+    </div>
+  </section>
 
 </main><!-- End #main -->
 
@@ -273,6 +307,9 @@
 
 <!-- Template Main JS File -->
 <script src="main.js"></script>
+<script src="main1.js"></script>
+<script src="main2.js"></script>
+<script src="main3.js"></script>
 
 </body>
 
